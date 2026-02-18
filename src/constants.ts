@@ -91,18 +91,31 @@ export const TESTIMONIALS = [
 
 export const PROJECTS = [
   {
-    title: 'Local Grocery App',
-    category: 'E-commerce',
-    image: 'https://picsum.photos/seed/grocery/600/400',
+    title: 'Modern E-commerce Platform',
+    category: 'Next.js & React',
+    image: 'https://picsum.photos/seed/ecommerce-tech/600/400',
   },
   {
-    title: 'Clinic Management System',
-    category: 'Web App',
-    image: 'https://picsum.photos/seed/clinic/600/400',
+    title: 'Healthcare Management App',
+    category: 'React Native',
+    image: 'https://picsum.photos/seed/mobile-app/600/400',
   },
   {
-    title: 'School Portfolio Website',
-    category: 'Website',
-    image: 'https://picsum.photos/seed/school/600/400',
+    title: 'Educational Portal',
+    category: 'Full Stack Web',
+    image: 'https://picsum.photos/seed/web-dev-bihar/600/400',
   },
 ];
+
+export const CONTACT_INFO = {
+  phone: '+91 9905109322',
+  whatsapp: '919905109322',
+  email: 'websolutionsbihar@gmail.com',
+  location: 'Patna, Bihar, India',
+  social: {
+    facebook: 'https://www.facebook.com/websolutionsbihar',
+    twitter: 'https://twitter.com/websolutionsbihar',
+    instagram: 'https://www.instagram.com/websolutionsbihar',
+    linkedin: 'https://www.linkedin.com/company/websolutionsbihar',
+  }
+};

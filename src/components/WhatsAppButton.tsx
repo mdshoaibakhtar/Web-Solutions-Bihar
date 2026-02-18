@@ -1,9 +1,10 @@
 import React from 'react';
 import { MessageCircle } from 'lucide-react';
 import { motion } from 'motion/react';
+import { CONTACT_INFO } from '../constants';
 
 const WhatsAppButton = () => {
-  const phoneNumber = '919876543210'; // Replace with real number
+  const phoneNumber = CONTACT_INFO.whatsapp;
   const message = 'Hello! I am interested in getting a website for my business.';
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

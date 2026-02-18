@@ -74,8 +74,8 @@ const About = () => {
             <div className="lg:w-1/2">
               <div className="relative">
                 <img 
-                  src="https://picsum.photos/seed/founder/600/600" 
-                  alt="Founder" 
+                  src="https://picsum.photos/seed/developer-bihar/600/600" 
+                  alt="Founder - Full Stack Developer" 
                   className="rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500"
                   referrerPolicy="no-referrer"
                 />

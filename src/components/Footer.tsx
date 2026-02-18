@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Globe, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { CONTACT_INFO } from '../constants';
 
 const Footer = () => {
   return (
@@ -21,10 +22,10 @@ const Footer = () => {
               Empowering small businesses, shop owners, and startups in Bihar with affordable and professional digital solutions.
             </p>
             <div className="flex space-x-4 pt-2">
-              <a href="#" className="hover:text-secondary transition-colors"><Facebook size={20} /></a>
-              <a href="#" className="hover:text-secondary transition-colors"><Twitter size={20} /></a>
-              <a href="#" className="hover:text-secondary transition-colors"><Instagram size={20} /></a>
-              <a href="#" className="hover:text-secondary transition-colors"><Linkedin size={20} /></a>
+              <a href={CONTACT_INFO.social.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors"><Facebook size={20} /></a>
+              <a href={CONTACT_INFO.social.twitter} target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors"><Twitter size={20} /></a>
+              <a href={CONTACT_INFO.social.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors"><Instagram size={20} /></a>
+              <a href={CONTACT_INFO.social.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors"><Linkedin size={20} /></a>
             </div>
           </div>
 
@@ -58,15 +59,15 @@ const Footer = () => {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start space-x-3">
                 <MapPin className="text-secondary shrink-0" size={18} />
-                <span>Patna, Bihar, India</span>
+                <span>{CONTACT_INFO.location}</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="text-secondary shrink-0" size={18} />
-                <span>+91 98765 43210</span>
+                <span>{CONTACT_INFO.phone}</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="text-secondary shrink-0" size={18} />
-                <span>info@websolutionsbihar.com</span>
+                <span>{CONTACT_INFO.email}</span>
               </li>
             </ul>
           </div>

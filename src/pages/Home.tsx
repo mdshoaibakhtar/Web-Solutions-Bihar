@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import { ArrowRight, CheckCircle2, Star, Users, Zap, ShieldCheck, MessageSquare, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Accordion, AccordionSummary, AccordionDetails, Typography } from '@mui/material';
-import { SERVICES, TESTIMONIALS, PRICING, FAQS } from '../constants';
+import { SERVICES, TESTIMONIALS, PRICING, FAQS, CONTACT_INFO } from '../constants';
 import SEO from '../components/SEO';
 
 const Home = () => {
@@ -83,6 +83,22 @@ const Home = () => {
         <div className="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-96 h-96 bg-orange-100 rounded-full blur-3xl opacity-50"></div>
       </section>
 
+      {/* Tech Stack Section */}
+      <section className="py-20 bg-white border-y border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl font-bold font-display text-slate-400 uppercase tracking-widest">Our Tech Stack</h2>
+          </div>
+          <div className="flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+            {['React', 'Next.js', 'React Native', 'Node.js', 'Tailwind CSS', 'TypeScript'].map((tech) => (
+              <div key={tech} className="text-xl font-bold text-slate-900 font-display">
+                {tech}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Services Preview */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -143,8 +159,8 @@ const Home = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://picsum.photos/seed/bihar-tech/800/600" 
-                alt="Digital Bihar" 
+                src="https://picsum.photos/seed/react-nextjs-dev/800/600" 
+                alt="Modern Web Development Stack" 
                 className="rounded-3xl shadow-2xl"
                 referrerPolicy="no-referrer"
               />
@@ -292,7 +308,7 @@ const Home = () => {
               Start Your Project Now
             </Link>
             <a 
-              href="https://wa.me/919876543210" 
+              href={`https://wa.me/${CONTACT_INFO.whatsapp}`} 
               className="bg-green-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-600 transition-all flex items-center"
             >
               <MessageSquare className="mr-2" size={20} />

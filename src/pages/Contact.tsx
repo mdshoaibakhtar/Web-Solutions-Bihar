@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Phone, Mail, MapPin, MessageSquare, Send, CheckCircle2 } from 'lucide-react';
 import SEO from '../components/SEO';
+import { CONTACT_INFO } from '../constants';
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -57,7 +58,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900">Call Us</h4>
-                    <p className="text-slate-600">+91 98765 43210</p>
+                    <p className="text-slate-600">{CONTACT_INFO.phone}</p>
                     <p className="text-xs text-slate-400">Mon-Sat, 10am to 7pm</p>
                   </div>
                 </div>
@@ -68,7 +69,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900">Email Us</h4>
-                    <p className="text-slate-600">info@websolutionsbihar.com</p>
+                    <p className="text-slate-600">{CONTACT_INFO.email}</p>
                     <p className="text-xs text-slate-400">We'll reply as soon as possible</p>
                   </div>
                 </div>
@@ -79,7 +80,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900">Our Location</h4>
-                    <p className="text-slate-600">Patna, Bihar, India</p>
+                    <p className="text-slate-600">{CONTACT_INFO.location}</p>
                     <p className="text-xs text-slate-400">Serving all districts of Bihar</p>
                   </div>
                 </div>
@@ -94,7 +95,7 @@ const Contact = () => {
                   The fastest way to reach us is via WhatsApp. Click the button below to start a chat.
                 </p>
                 <a 
-                  href="https://wa.me/919876543210" 
+                  href={`https://wa.me/${CONTACT_INFO.whatsapp}`} 
                   className="inline-block bg-white text-primary px-8 py-3 rounded-xl font-bold hover:bg-blue-50 transition-all"
                 >
                   Chat on WhatsApp
