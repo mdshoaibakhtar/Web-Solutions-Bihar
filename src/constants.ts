@@ -4,30 +4,35 @@ export const SERVICES = [
     title: 'Website Development',
     description: 'Professional websites for your business. We build fast, mobile-friendly sites that help you reach more customers in Bihar.',
     icon: 'Globe',
+    image : 'https://images.unsplash.com/photo-1763568258605-6783d4fad7b5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdlYiUyMGFwcCUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww'
   },
   {
     id: 'ecommerce',
     title: 'E-commerce Development',
     description: 'Start selling your products online. We create easy-to-use online shops for local stores and startups.',
     icon: 'ShoppingCart',
+    image: 'https://images.unsplash.com/photo-1487014679447-9f8336841d58?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2Vic2l0ZSUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww'
   },
   {
     id: 'custom-apps',
     title: 'Custom Web Applications',
     description: 'Specific tools for your business needs. From school management to clinic booking systems.',
     icon: 'Code',
+    image: 'https://plus.unsplash.com/premium_photo-1661410847282-d6af31c576a9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXBwbGljYXRpb258ZW58MHx8MHx8fDA%3D'
   },
   {
     id: 'maintenance',
     title: 'Website Maintenance',
     description: 'Keep your website updated and secure. We handle the technical stuff so you can focus on your business.',
     icon: 'Settings',
+    image: 'https://plus.unsplash.com/premium_photo-1681995453325-455f7084888d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJ1c2luZXNzfGVufDB8fDB8fHww'
   },
   {
     id: 'seo',
     title: 'SEO Basics',
     description: 'Get found on Google. We help local customers find your business when they search online.',
     icon: 'Search',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGlnaXRhbCUyMG1hcmtldGluZ3xlbnwwfHwwfHx8MA%3D%3D'
   },
 ];
 
@@ -41,7 +46,7 @@ export const PRICING = [
   {
     name: 'Business',
     price: '₹24,999',
-    features: ['5-7 Pages', 'SEO Optimized', 'WhatsApp Integration', 'Google Maps Setup', 'Business Email'],
+    features: ['5-7 Pages', 'SEO Optimized', 'WhatsApp Integration', 'Google Maps Location', 'Support Email'],
     recommended: true,
   },
   {

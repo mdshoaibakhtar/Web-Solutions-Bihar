@@ -88,7 +88,7 @@ const Services = () => {
                 <div className="lg:w-1/2">
                   <div className="bg-slate-100 rounded-3xl overflow-hidden shadow-inner">
                     <img 
-                      src={`https://picsum.photos/seed/${service.id}-software-development/800/600`} 
+                      src={service?.image} 
                       alt={service.title}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"

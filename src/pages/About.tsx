@@ -74,13 +74,13 @@ const About = () => {
             <div className="lg:w-1/2">
               <div className="relative">
                 <img 
-                  src="https://picsum.photos/seed/developer-bihar/600/600" 
+                  src="https://i.pinimg.com/originals/30/e2/d6/30e2d6c0338975b82174e37954e73ce3.jpg" 
                   alt="Founder - Full Stack Developer" 
                   className="rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100">
-                  <p className="text-primary font-bold text-xl">2+ Years</p>
+                  <p className="text-primary font-bold text-xl">4+ Years</p>
                   <p className="text-xs text-slate-500 uppercase tracking-wider">Experience</p>
                 </div>
               </div>
@@ -88,7 +88,7 @@ const About = () => {
             <div className="lg:w-1/2">
               <h2 className="text-3xl md:text-4xl font-bold font-display mb-6">Meet the Founder</h2>
               <p className="text-slate-600 mb-6 text-lg leading-relaxed">
-                Hi, I'm a Freelance Full Stack Developer based in Bihar. With over 2 years of experience in building modern web applications, I realized that many local businesses in our state are struggling to go digital because of high costs and complex technical jargon.
+                Hi, I'm a Freelance Full Stack Developer based in Bihar. With over 4 years of experience in building modern web applications, I realized that many local businesses in our state are struggling to go digital because of high costs and complex technical jargon.
               </p>
               <p className="text-slate-600 mb-8 text-lg leading-relaxed">
                 I started Web Solutions Bihar to solve this problem. My goal is to provide simple, affordable, and effective digital tools that help my fellow Bihari entrepreneurs succeed in the online world.
@@ -104,7 +104,7 @@ const About = () => {
                   <div className="bg-blue-100 text-primary p-2 rounded-lg">
                     <Briefcase size={20} />
                   </div>
-                  <span className="font-semibold text-slate-700">10+ Projects</span>
+                  <span className="font-semibold text-slate-700">75+ Projects</span>
                 </div>
               </div>
             </div>
@@ -118,7 +118,7 @@ const About = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
               { label: 'Happy Clients', value: '50+' },
-              { label: 'Projects Done', value: '100+' },
+              { label: 'Projects Done', value: '75+' },
               { label: 'Bihar Districts', value: '15+' },
               { label: 'Support Hours', value: '24/7' }
             ].map((stat, i) => (

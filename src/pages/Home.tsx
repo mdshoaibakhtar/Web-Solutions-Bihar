@@ -88,7 +88,7 @@ const Home = () => {
             >
               <div className="relative z-10 bg-white p-4 rounded-[2.5rem] shadow-2xl border border-slate-100 transform rotate-3 hover:rotate-0 transition-transform duration-500">
                 <img 
-                  src="https://picsum.photos/seed/web-design-code/800/1000" 
+                  src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D" 
                   alt="Modern Web Interface" 
                   className="rounded-[2rem] w-full h-auto object-cover"
                   referrerPolicy="no-referrer"
