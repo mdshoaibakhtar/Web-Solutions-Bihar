@@ -24,56 +24,94 @@ const Home = () => {
     <div className="overflow-hidden">
       <SEO 
         title="Home - Affordable Web Development in Bihar" 
-        description="Web Solutions Bihar provides affordable website development, e-commerce solutions, and digital marketing for small businesses in Bihar. Starting at ₹4,999."
+        description="Web Solutions Bihar provides affordable website development, e-commerce solutions, and digital marketing for small businesses in Bihar. Starting at ₹14,999."
         keywords="web development bihar, website maker patna, affordable websites bihar, digital bihar, ecommerce bihar"
       />
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-gradient-to-br from-blue-50 via-white to-orange-50">
+      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-gradient-to-br from-blue-50 via-white to-orange-50 overflow-hidden">
+        {/* Tech Background Pattern */}
+        <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#1e40af 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
+        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
-              className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-primary uppercase bg-blue-100 rounded-full"
-            >
-              #1 Digital Partner for Bihar Businesses
-            </motion.div>
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-              className="text-5xl md:text-7xl font-bold font-display text-slate-900 leading-tight mb-6"
-            >
-              Take Your <span className="text-primary">Bihar Business</span> <span className="text-secondary">Online</span>
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.5 }}
-              className="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed"
-            >
-              Affordable, professional, and easy-to-manage websites for shop owners, startups, and small businesses in Bihar. Starting at just ₹4,999.
-            </motion.p>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
-              className="flex flex-col sm:flex-row items-center justify-center gap-4"
-            >
-              <Link
-                to="/contact"
-                className="w-full sm:w-auto bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition-all shadow-xl shadow-blue-200 flex items-center justify-center group"
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-left">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-primary uppercase bg-blue-100 rounded-full"
               >
-                Get Free Consultation
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-              </Link>
-              <Link
-                to="/services"
-                className="w-full sm:w-auto bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 transition-all flex items-center justify-center"
+                #1 Digital Partner for Bihar Businesses
+              </motion.div>
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+                className="text-5xl md:text-7xl font-bold font-display text-slate-900 leading-tight mb-6"
               >
-                View Services
-              </Link>
+                Take Your <span className="text-primary">Bihar Business</span> <span className="text-secondary">Online</span>
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3, duration: 0.5 }}
+                className="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed"
+              >
+                Affordable, professional, and easy-to-manage websites for shop owners, startups, and small businesses in Bihar. Starting at just ₹14,999.
+              </motion.p>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4, duration: 0.5 }}
+                className="flex flex-col sm:flex-row items-center justify-start gap-4"
+              >
+                <Link
+                  to="/contact"
+                  className="w-full sm:w-auto bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition-all shadow-xl shadow-blue-200 flex items-center justify-center group"
+                >
+                  Get Free Consultation
+                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                </Link>
+                <Link
+                  to="/services"
+                  className="w-full sm:w-auto bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 transition-all flex items-center justify-center"
+                >
+                  View Services
+                </Link>
+              </motion.div>
+            </div>
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="relative hidden lg:block"
+            >
+              <div className="relative z-10 bg-white p-4 rounded-[2.5rem] shadow-2xl border border-slate-100 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                <img 
+                  src="https://picsum.photos/seed/web-design-code/800/1000" 
+                  alt="Modern Web Interface" 
+                  className="rounded-[2rem] w-full h-auto object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              {/* Floating Elements */}
+              <div className="absolute -top-10 -right-10 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 animate-bounce">
+                <div className="flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  <span className="text-sm font-bold text-slate-700">Live Website</span>
+                </div>
+              </div>
+              <div className="absolute -bottom-10 -left-10 bg-white p-6 rounded-2xl shadow-xl border border-slate-100">
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-primary">
+                    <Zap size={20} />
+                  </div>
+                  <div>
+                    <p className="text-xs text-slate-500 uppercase">Performance</p>
+                    <p className="text-sm font-bold text-slate-900">99+ Score</p>
+                  </div>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
@@ -89,11 +127,24 @@ const Home = () => {
           <div className="text-center mb-12">
             <h2 className="text-2xl font-bold font-display text-slate-400 uppercase tracking-widest">Our Tech Stack</h2>
           </div>
-          <div className="flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-            {['React', 'Next.js', 'React Native', 'Node.js', 'Tailwind CSS', 'TypeScript'].map((tech) => (
-              <div key={tech} className="text-xl font-bold text-slate-900 font-display">
-                {tech}
-              </div>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+            {[
+              { name: 'React', color: 'text-[#61DAFB]' },
+              { name: 'Next.js', color: 'text-black' },
+              { name: 'React Native', color: 'text-[#61DAFB]' },
+              { name: 'Node.js', color: 'text-[#339933]' },
+              { name: 'Tailwind CSS', color: 'text-[#06B6D4]' },
+              { name: 'TypeScript', color: 'text-[#3178C6]' }
+            ].map((tech) => (
+              <motion.div 
+                key={tech.name}
+                whileHover={{ scale: 1.1, y: -5 }}
+                className="flex flex-col items-center space-y-2 opacity-60 hover:opacity-100 transition-all duration-300"
+              >
+                <div className={`text-2xl md:text-3xl font-bold font-display ${tech.color}`}>
+                  {tech.name}
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -159,8 +210,8 @@ const Home = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://picsum.photos/seed/react-nextjs-dev/800/600" 
-                alt="Modern Web Development Stack" 
+                src="https://plus.unsplash.com/premium_photo-1678566153919-86c4ba4216f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2Vic2l0ZSUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww" 
+                alt="Our Technical Team" 
                 className="rounded-3xl shadow-2xl"
                 referrerPolicy="no-referrer"
               />

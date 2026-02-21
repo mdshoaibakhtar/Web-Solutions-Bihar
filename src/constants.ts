@@ -34,19 +34,19 @@ export const SERVICES = [
 export const PRICING = [
   {
     name: 'Basic',
-    price: '₹4,999',
-    features: ['1 Page Website', 'Mobile Responsive', 'Contact Form', '1 Year Support', 'Free Domain (.com/.in)'],
+    price: '₹14,999',
+    features: ['1 Page Website', 'Mobile Responsive', 'Contact Form', '1 Year Support', '24/7 Support'],
     recommended: false,
   },
   {
     name: 'Business',
-    price: '₹9,999',
+    price: '₹24,999',
     features: ['5-7 Pages', 'SEO Optimized', 'WhatsApp Integration', 'Google Maps Setup', 'Business Email'],
     recommended: true,
   },
   {
     name: 'Premium',
-    price: '₹19,999+',
+    price: '₹39,999+',
     features: ['E-commerce / Custom App', 'Payment Gateway', 'Inventory Management', 'Priority Support', 'Advanced SEO'],
     recommended: false,
   },
@@ -55,7 +55,7 @@ export const PRICING = [
 export const FAQS = [
   {
     question: 'How much does a website cost?',
-    answer: 'Our basic website starts at just ₹4,999. We believe in affordable pricing for small businesses in Bihar.',
+    answer: 'Our basic website starts at just ₹14,999. We believe in affordable pricing for small businesses in Bihar.',
   },
   {
     question: 'How long does it take to build a website?',
@@ -93,17 +93,17 @@ export const PROJECTS = [
   {
     title: 'Modern E-commerce Platform',
     category: 'Next.js & React',
-    image: 'https://picsum.photos/seed/ecommerce-tech/600/400',
+    image: 'https://picsum.photos/seed/nextjs-ecommerce-ui/600/400',
   },
   {
     title: 'Healthcare Management App',
     category: 'React Native',
-    image: 'https://picsum.photos/seed/mobile-app/600/400',
+    image: 'https://picsum.photos/seed/react-native-app-ui/600/400',
   },
   {
     title: 'Educational Portal',
     category: 'Full Stack Web',
-    image: 'https://picsum.photos/seed/web-dev-bihar/600/400',
+    image: 'https://picsum.photos/seed/fullstack-web-dashboard/600/400',
   },
 ];
 
