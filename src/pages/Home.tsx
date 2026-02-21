@@ -243,13 +243,16 @@ const Home = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {PROJECTS.map((project, index) => (
-              <motion.div
+              <motion.a
                 key={index}
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300"
+                className="group block bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300"
               >
                 <div className="relative h-64 overflow-hidden">
                   <img 
@@ -259,29 +262,19 @@ const Home = () => {
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                    <a 
-                      href={project.link} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="bg-white text-slate-900 px-4 py-2 rounded-xl font-bold text-sm flex items-center gap-2 hover:bg-primary hover:text-white transition-colors"
-                    >
+                    <div className="bg-white text-slate-900 px-4 py-2 rounded-xl font-bold text-sm flex items-center gap-2 group-hover:bg-primary group-hover:text-white transition-colors">
                       View Live Project <ExternalLink size={14} />
-                    </a>
+                    </div>
                   </div>
                 </div>
                 <div className="p-6">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider mb-2 block">{project.category}</span>
                   <h3 className="text-xl font-bold text-slate-900 mb-2">{project.title}</h3>
-                  <a 
-                    href={project.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-slate-500 hover:text-primary transition-colors flex items-center gap-1 text-sm font-medium"
-                  >
+                  <div className="text-slate-500 group-hover:text-primary transition-colors flex items-center gap-1 text-sm font-medium">
                     Visit Website <ExternalLink size={14} />
-                  </a>
+                  </div>
                 </div>
-              </motion.div>
+              </motion.a>
             ))}
           </div>
         </div>

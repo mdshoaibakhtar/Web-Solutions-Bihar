@@ -102,6 +102,12 @@ export const PROJECTS = [
     link: 'https://dr-emraan.vercel.app/'
   },
   {
+    title: 'Freaky Garments',
+    category: 'Clothing Store',
+    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900&auto=format&fit=crop&q=60',
+    link: 'https://freaky-garments.vercel.app/'
+  },
+  {
     title: 'Manpasand Footwear',
     category: 'E-commerce Store',
     image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&auto=format&fit=crop&q=60',
