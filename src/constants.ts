@@ -40,19 +40,19 @@ export const PRICING = [
   {
     name: 'Basic',
     price: '₹14,999',
-    features: ['1 Page Website', 'Mobile Responsive', 'Contact Form', '1 Year Support', '24/7 Support'],
+    features: ['1 Page Website', 'Mobile Responsive', 'Contact Form', '1 Year Support', '24/7 Support', 'No Domain Included'],
     recommended: false,
   },
   {
     name: 'Business',
     price: '₹24,999',
-    features: ['5-7 Pages', 'SEO Optimized', 'WhatsApp Integration', 'Google Maps Location', 'Support Email'],
+    features: ['5-7 Pages', 'SEO Optimized', 'WhatsApp Integration', 'Google Maps Location', 'Support Email', 'With Domain: ₹27,999'],
     recommended: true,
   },
   {
     name: 'Premium',
-    price: '₹39,999+',
-    features: ['E-commerce / Custom App', 'Payment Gateway', 'Inventory Management', 'Priority Support', 'Advanced SEO'],
+    price: 'Contact Us',
+    features: ['E-commerce / Custom App', 'Payment Gateway', 'Inventory Management', 'Priority Support', 'Advanced SEO', 'Contact for details'],
     recommended: false,
   },
 ];
@@ -60,7 +60,7 @@ export const PRICING = [
 export const FAQS = [
   {
     question: 'How much does a website cost?',
-    answer: 'Our basic website starts at just ₹14,999. We believe in affordable pricing for small businesses in Bihar.',
+    answer: 'Our basic website starts at ₹14,999 (without domain). We offer transparent pricing with options for businesses of all sizes in Bihar.',
   },
   {
     question: 'How long does it take to build a website?',
@@ -96,20 +96,41 @@ export const TESTIMONIALS = [
 
 export const PROJECTS = [
   {
-    title: 'Modern E-commerce Platform',
-    category: 'Next.js & React',
-    image: 'https://picsum.photos/seed/nextjs-ecommerce-ui/600/400',
+    title: 'Dr. Emraan',
+    category: 'Healthcare Portal',
+    image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFsZSUyMGRvY3RvcnxlbnwwfDF8MHx8fDA%3D',
+    link: 'https://dr-emraan.vercel.app/'
   },
   {
-    title: 'Healthcare Management App',
-    category: 'React Native',
-    image: 'https://picsum.photos/seed/react-native-app-ui/600/400',
+    title: 'Manpasand Footwear',
+    category: 'E-commerce Store',
+    image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&auto=format&fit=crop&q=60',
+    link: 'https://manpasand-footwear.vercel.app/'
   },
   {
     title: 'Educational Portal',
     category: 'Full Stack Web',
-    image: 'https://picsum.photos/seed/fullstack-web-dashboard/600/400',
+    image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=900&auto=format&fit=crop&q=60',
+    link: 'https://example.com/education'
   },
+  {
+    title: 'Real Estate Dashboard',
+    category: 'React & Node.js',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=900&auto=format&fit=crop&q=60',
+    link: 'https://example.com/realestate'
+  },
+  {
+    title: 'Inventory Management System',
+    category: 'Custom Web App',
+    image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=900&auto=format&fit=crop&q=60',
+    link: 'https://example.com/inventory'
+  },
+  {
+    title: 'Local Business Directory',
+    category: 'SEO & Web Dev',
+    image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=900&auto=format&fit=crop&q=60',
+    link: 'https://example.com/directory'
+  }
 ];
 
 export const CONTACT_INFO = {

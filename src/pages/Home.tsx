@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, CheckCircle2, Star, Users, Zap, ShieldCheck, MessageSquare, ChevronDown } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Star, Users, Zap, ShieldCheck, MessageSquare, ChevronDown, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Accordion, AccordionSummary, AccordionDetails, Typography } from '@mui/material';
-import { SERVICES, TESTIMONIALS, PRICING, FAQS, CONTACT_INFO } from '../constants';
+import { SERVICES, TESTIMONIALS, PRICING, FAQS, CONTACT_INFO, PROJECTS } from '../constants';
 import SEO from '../components/SEO';
 
 const Home = () => {
@@ -24,7 +24,7 @@ const Home = () => {
     <div className="overflow-hidden">
       <SEO 
         title="Home - Affordable Web Development in Bihar" 
-        description="Web Solutions Bihar provides affordable website development, e-commerce solutions, and digital marketing for small businesses in Bihar. Starting at ₹14,999."
+        description="Web Solutions Bihar provides affordable website development, e-commerce solutions, and digital marketing for small businesses in Bihar. Starting at ₹14,999 (No domain)."
         keywords="web development bihar, website maker patna, affordable websites bihar, digital bihar, ecommerce bihar"
       />
       {/* Hero Section */}
@@ -57,7 +57,7 @@ const Home = () => {
                 transition={{ delay: 0.3, duration: 0.5 }}
                 className="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed"
               >
-                Affordable, professional, and easy-to-manage websites for shop owners, startups, and small businesses in Bihar. Starting at just ₹14,999.
+                Affordable, professional, and easy-to-manage websites for shop owners, startups, and small businesses in Bihar. Starting at just ₹14,999 (No domain).
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -231,6 +231,62 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Recent Deliverables Section */}
+      <section className="py-24 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">Recent Deliverables</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              A showcase of our latest projects delivered to happy clients across Bihar and beyond.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {PROJECTS.map((project, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300"
+              >
+                <div className="relative h-64 overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <a 
+                      href={project.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-white text-slate-900 px-4 py-2 rounded-xl font-bold text-sm flex items-center gap-2 hover:bg-primary hover:text-white transition-colors"
+                    >
+                      View Live Project <ExternalLink size={14} />
+                    </a>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <span className="text-xs font-bold text-primary uppercase tracking-wider mb-2 block">{project.category}</span>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">{project.title}</h3>
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-slate-500 hover:text-primary transition-colors flex items-center gap-1 text-sm font-medium"
+                  >
+                    Visit Website <ExternalLink size={14} />
+                  </a>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Pricing Section */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -254,8 +310,8 @@ const Home = () => {
                 )}
                 <h3 className="text-xl font-bold mb-2">{plan.name}</h3>
                 <div className="flex items-baseline mb-6">
-                  <span className="text-4xl font-bold text-slate-900">{plan.price}</span>
-                  <span className="text-slate-500 ml-1">/one-time</span>
+                  <span className={`${plan.price === 'Contact Us' ? 'text-3xl' : 'text-4xl'} font-bold text-slate-900`}>{plan.price}</span>
+                  {plan.price !== 'Contact Us' && <span className="text-slate-500 ml-1">/one-time</span>}
                 </div>
                 <ul className="space-y-4 mb-8">
                   {plan.features.map((feature, j) => (
