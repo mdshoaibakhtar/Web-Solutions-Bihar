@@ -18,7 +18,7 @@ const Contact = () => {
     <div className="pt-24">
       <SEO 
         title="Contact Us - Get a Free Consultation" 
-        description="Contact Web Solutions Bihar for a free consultation about your website project. Reach us via phone, email, or WhatsApp."
+        description="Contact Web Solutions for a free consultation about your website project. Reach us via phone, email, or WhatsApp."
       />
       {/* Header */}
       <section className="bg-slate-50 py-20">
@@ -81,7 +81,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-bold text-slate-900">Our Location</h4>
                     <p className="text-slate-600">{CONTACT_INFO.location}</p>
-                    <p className="text-xs text-slate-400">Serving all districts of Bihar</p>
+                    <p className="text-xs text-slate-400">Serving businesses everywhere</p>
                   </div>
                 </div>
               </div>
@@ -179,21 +179,18 @@ const Contact = () => {
         </div>
       </section>
       
-      {/* Map Placeholder */}
-      <section className="h-96 bg-slate-200 relative overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <MapPin size={48} className="text-primary mx-auto mb-4" />
-            <h3 className="text-xl font-bold">Serving all of Bihar</h3>
-            <p className="text-slate-600">Patna • Gaya • Muzaffarpur • Bhagalpur • Darbhanga</p>
-          </div>
-        </div>
-        <img 
-          src="https://picsum.photos/seed/bihar-map/1920/600?blur=5" 
-          alt="Map" 
-          className="w-full h-full object-cover opacity-50"
-          referrerPolicy="no-referrer"
-        />
+      {/* Map Section */}
+      <section className="h-[450px] bg-slate-200 relative overflow-hidden">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m3!1d115133.01016860615!2d85.07300224999999!3d25.60802085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f29937c52d4f05%3A0x8311051137c9350!2sPatna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1712480000000!5m2!1sen!2sin" 
+          width="100%" 
+          height="100%" 
+          style={{ border: 0 }} 
+          allowFullScreen={true} 
+          loading="lazy" 
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Web Solutions Location"
+        ></iframe>
       </section>
     </div>
   );

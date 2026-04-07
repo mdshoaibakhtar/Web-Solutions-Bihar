@@ -7,8 +7,8 @@ const About = () => {
   return (
     <div className="pt-24">
       <SEO 
-        title="About Us - Our Mission for Digital Bihar" 
-        description="Learn about Web Solutions Bihar, our mission to digitize local businesses, and our founder's vision for a tech-empowered Bihar."
+        title="About Us - Our Mission for Digital Growth" 
+        description="Learn about Web Solutions, our mission to digitize local businesses, and our founder's vision for a tech-empowered future."
       />
       {/* Hero */}
       <section className="bg-primary py-24 text-white">
@@ -18,7 +18,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-6xl font-bold font-display mb-6"
           >
-            Digitizing <span className="text-secondary">Bihar</span>, One Business at a Time
+            Digitizing Businesses, One at a Time
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -26,7 +26,7 @@ const About = () => {
             transition={{ delay: 0.1 }}
             className="text-blue-100 max-w-3xl mx-auto text-lg md:text-xl leading-relaxed"
           >
-            We are on a mission to empower local shop owners, startups, and small businesses in Bihar with affordable and world-class digital solutions.
+            We are on a mission to empower local shop owners, startups, and small businesses with affordable and world-class digital solutions.
           </motion.p>
         </div>
       </section>
@@ -46,7 +46,7 @@ const About = () => {
               </div>
               <h2 className="text-2xl font-bold font-display mb-4">Our Mission</h2>
               <p className="text-slate-600 leading-relaxed">
-                To bridge the digital divide in Bihar by providing high-quality web development and digital marketing services at prices that local businesses can afford. We want every small shop in Bihar to have its own digital identity.
+                To bridge the digital divide by providing high-quality web development and digital marketing services at prices that local businesses can afford. We want every small shop to have its own digital identity.
               </p>
             </motion.div>
             <motion.div 
@@ -60,7 +60,7 @@ const About = () => {
               </div>
               <h2 className="text-2xl font-bold font-display mb-4">Our Vision</h2>
               <p className="text-slate-600 leading-relaxed">
-                To see a "Digital Bihar" where technology is used by every entrepreneur to grow their business, create jobs, and contribute to the state's economy. We envision being the most trusted digital partner for Bihar's growth.
+                To see a "Digital Future" where technology is used by every entrepreneur to grow their business, create jobs, and contribute to the economy. We envision being the most trusted digital partner for growth.
               </p>
             </motion.div>
           </div>
@@ -88,10 +88,10 @@ const About = () => {
             <div className="lg:w-1/2">
               <h2 className="text-3xl md:text-4xl font-bold font-display mb-6">Meet the Founder</h2>
               <p className="text-slate-600 mb-6 text-lg leading-relaxed">
-                Hi, I'm a Freelance Full Stack Developer based in Bihar. With over 4 years of experience in building modern web applications, I realized that many local businesses in our state are struggling to go digital because of high costs and complex technical jargon.
+                Hi, I'm a Freelance Full Stack Developer. With over 4 years of experience in building modern web applications, I realized that many local businesses are struggling to go digital because of high costs and complex technical jargon.
               </p>
               <p className="text-slate-600 mb-8 text-lg leading-relaxed">
-                I started Web Solutions Bihar to solve this problem. My goal is to provide simple, affordable, and effective digital tools that help my fellow Bihari entrepreneurs succeed in the online world.
+                I started Web Solutions to solve this problem. My goal is to provide simple, affordable, and effective digital tools that help fellow entrepreneurs succeed in the online world.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="flex items-center space-x-3">
@@ -119,7 +119,7 @@ const About = () => {
             {[
               { label: 'Happy Clients', value: '50+' },
               { label: 'Projects Done', value: '75+' },
-              { label: 'Bihar Districts', value: '15+' },
+              { label: 'Cities Served', value: '15+' },
               { label: 'Support Hours', value: '24/7' }
             ].map((stat, i) => (
               <div key={i}>

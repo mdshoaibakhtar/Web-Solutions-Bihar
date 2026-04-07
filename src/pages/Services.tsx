@@ -21,7 +21,7 @@ const Services = () => {
     <div className="pt-24">
       <SEO 
         title="Our Services - Website & E-commerce Development" 
-        description="Explore our range of digital services including website development, e-commerce solutions, SEO, and maintenance for Bihar businesses."
+        description="Explore our range of digital services including website development, e-commerce solutions, SEO, and maintenance for businesses."
       />
       {/* Header */}
       <section className="bg-slate-50 py-20">

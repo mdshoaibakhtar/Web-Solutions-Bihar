@@ -2,7 +2,7 @@ export const SERVICES = [
   {
     id: 'web-dev',
     title: 'Website Development',
-    description: 'Professional websites for your business. We build fast, mobile-friendly sites that help you reach more customers in Bihar.',
+    description: 'Professional websites for your business. We build fast, mobile-friendly sites that help you reach more customers.',
     icon: 'Globe',
     image : 'https://images.unsplash.com/photo-1763568258605-6783d4fad7b5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdlYiUyMGFwcCUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww'
   },
@@ -60,7 +60,7 @@ export const PRICING = [
 export const FAQS = [
   {
     question: 'How much does a website cost?',
-    answer: 'Our basic website starts at ₹14,999 (without domain). We offer transparent pricing with options for businesses of all sizes in Bihar.',
+    answer: 'Our basic website starts at ₹14,999 (without domain). We offer transparent pricing with options for businesses of all sizes.',
   },
   {
     question: 'How long does it take to build a website?',
@@ -80,7 +80,7 @@ export const TESTIMONIALS = [
   {
     name: 'Rajesh Kumar',
     role: 'Shop Owner, Patna',
-    content: 'Web Solutions helped me take my hardware shop online. Now I get calls from customers across Bihar!',
+    content: 'Web Solutions helped me take my hardware shop online. Now I get calls from customers everywhere!',
   },
   {
     name: 'Dr. Anjali Singh',
@@ -95,6 +95,24 @@ export const TESTIMONIALS = [
 ];
 
 export const PROJECTS = [
+  {
+    title: 'Aryabhatta Public School',
+    category: 'Educational Institute',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHVAweq1r6QyYmO9-0QzciV9OF-UzbBpe24GmCTLzzogF4InQr81RrUEeSaiWSFgWejsHaEICe93RnAFMNoKRq-tsCGq31EvnrS3EnXcAM0rPjTz4dVVWZmW3elk79F7N2A9NqzM1_2Q=s1360-w1360-h1020-rw',
+    link: 'https://aryabhatta-public-school-bhagalpur.vercel.app/'
+  },
+  {
+    title: 'Holy Family School',
+    category: 'Educational Institute',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHVAweo6-MPncxb0yy4kvF2X-kxIb595sy3-SR0qFELKqHmQtOtxhb0jpwjnQsQxI6w8fXrAhDZk4zoIWm0iDK1fMdBy-fvWOpOoyErzepqf8iKhaAKuUONw4VcJxgAQwCzwNeUsTDBnLg=s1360-w1360-h1020-rw',
+    link: 'https://holy-family-school-bhagalpur.vercel.app/'
+  },
+  {
+    title: 'Penguin Public School',
+    category: 'Educational Institute',
+    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c2Nob29sfGVufDB8fDB8fHww',
+    link: 'https://penguin-public-school.vercel.app/'
+  },
   {
     title: 'Dr. Emraan',
     category: 'Healthcare Portal',
@@ -142,12 +160,12 @@ export const PROJECTS = [
 export const CONTACT_INFO = {
   phone: '+91 9905109322',
   whatsapp: '919905109322',
-  email: 'websolutionsbihar@gmail.com',
-  location: 'Patna, Bihar, India',
+  email: 'websolutions@gmail.com',
+  location: 'Patna, India',
   social: {
-    facebook: 'https://www.facebook.com/websolutionsbihar',
-    twitter: 'https://twitter.com/websolutionsbihar',
-    instagram: 'https://www.instagram.com/websolutionsbihar',
-    linkedin: 'https://www.linkedin.com/company/websolutionsbihar',
+    facebook: 'https://www.facebook.com/websolutions',
+    twitter: 'https://twitter.com/websolutions',
+    instagram: 'https://www.instagram.com/websolutions',
+    linkedin: 'https://www.linkedin.com/company/websolutions',
   }
 };

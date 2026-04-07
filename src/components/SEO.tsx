@@ -8,7 +8,7 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({ title, description, keywords }) => {
-  const fullTitle = `${title} | Web Solutions Bihar`;
+  const fullTitle = `${title} | Web Solutions`;
   
   return (
     <Helmet>

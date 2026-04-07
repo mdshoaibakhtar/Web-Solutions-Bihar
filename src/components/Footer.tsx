@@ -15,11 +15,11 @@ const Footer = () => {
                 <Globe className="text-white w-6 h-6" />
               </div>
               <span className="text-xl font-bold font-display text-white">
-                Web Solutions <span className="text-secondary">Bihar</span>
+                Web Solutions
               </span>
             </Link>
             <p className="text-sm leading-relaxed">
-              Empowering small businesses, shop owners, and startups in Bihar with affordable and professional digital solutions.
+              Empowering small businesses, shop owners, and startups with affordable and professional digital solutions.
             </p>
             <div className="flex space-x-4 pt-2">
               <a href={CONTACT_INFO.social.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors"><Facebook size={20} /></a>
@@ -75,10 +75,10 @@ const Footer = () => {
 
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-xs">
-            © {new Date().getFullYear()} Web Solutions Bihar. All rights reserved.
+            © {new Date().getFullYear()} Web Solutions. All rights reserved.
           </p>
           <p className="text-xs">
-            Made with ❤️ for Bihar
+            Made with ❤️ for Businesses
           </p>
         </div>
       </div>

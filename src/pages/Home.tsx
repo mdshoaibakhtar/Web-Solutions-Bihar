@@ -23,9 +23,9 @@ const Home = () => {
   return (
     <div className="overflow-hidden">
       <SEO 
-        title="Home - Affordable Web Development in Bihar" 
-        description="Web Solutions Bihar provides affordable website development, e-commerce solutions, and digital marketing for small businesses in Bihar. Starting at ₹14,999 (No domain)."
-        keywords="web development bihar, website maker patna, affordable websites bihar, digital bihar, ecommerce bihar"
+        title="Home - Affordable Web Development" 
+        description="Web Solutions provides affordable website development, e-commerce solutions, and digital marketing for small businesses. Starting at ₹14,999 (No domain)."
+        keywords="web development, website maker, affordable websites, digital solutions, ecommerce"
       />
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-gradient-to-br from-blue-50 via-white to-orange-50 overflow-hidden">
@@ -41,7 +41,7 @@ const Home = () => {
                 transition={{ duration: 0.5 }}
                 className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-primary uppercase bg-blue-100 rounded-full"
               >
-                #1 Digital Partner for Bihar Businesses
+                #1 Digital Partner for Your Business
               </motion.div>
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
@@ -49,7 +49,7 @@ const Home = () => {
                 transition={{ delay: 0.2, duration: 0.5 }}
                 className="text-5xl md:text-7xl font-bold font-display text-slate-900 leading-tight mb-6"
               >
-                Take Your <span className="text-primary">Bihar Business</span> <span className="text-secondary">Online</span>
+                Take Your <span className="text-primary">Business</span> <span className="text-secondary">Online</span>
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ const Home = () => {
                 transition={{ delay: 0.3, duration: 0.5 }}
                 className="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed"
               >
-                Affordable, professional, and easy-to-manage websites for shop owners, startups, and small businesses in Bihar. Starting at just ₹14,999 (No domain).
+                Affordable, professional, and easy-to-manage websites for shop owners, startups, and small businesses. Starting at just ₹14,999 (No domain).
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -156,7 +156,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">Our Services</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Simple and effective digital solutions designed specifically for the local market of Bihar.
+              Simple and effective digital solutions designed specifically for the local market.
             </p>
           </div>
           
@@ -188,11 +188,11 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold font-display mb-8">Why Choose Web Solutions Bihar?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold font-display mb-8">Why Choose Web Solutions?</h2>
               <div className="space-y-6">
                 {[
-                  { title: 'Affordable Pricing', desc: 'High-quality websites at rates that fit the budget of small shop owners in Bihar.' },
-                  { title: 'Local Expertise', desc: 'We understand the Bihar market and what local customers are looking for.' },
+                  { title: 'Affordable Pricing', desc: 'High-quality websites at rates that fit the budget of small shop owners.' },
+                  { title: 'Local Expertise', desc: 'We understand the market and what local customers are looking for.' },
                   { title: 'Simple Language', desc: 'No heavy tech jargon. We explain everything in simple Hindi and English.' },
                   { title: 'Mobile First', desc: '90% of your customers use phones. We build websites that work perfectly on mobile.' }
                 ].map((item, i) => (
@@ -237,7 +237,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">Recent Deliverables</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              A showcase of our latest projects delivered to happy clients across Bihar and beyond.
+              A showcase of our latest projects delivered to happy clients everywhere.
             </p>
           </div>
           
@@ -333,7 +333,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">What Our Clients Say</h2>
-            <p className="text-slate-400">Trusted by local businesses across Bihar.</p>
+            <p className="text-slate-400">Trusted by local businesses everywhere.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -398,7 +398,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <h2 className="text-3xl md:text-5xl font-bold font-display text-white mb-6">Ready to Grow Your Business?</h2>
           <p className="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">
-            Don't let your competitors get ahead. Join the digital revolution in Bihar today.
+            Don't let your competitors get ahead. Join the digital revolution today.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link 

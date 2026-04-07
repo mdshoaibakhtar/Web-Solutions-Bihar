@@ -36,7 +36,7 @@ const Navbar = () => {
               <Globe className="text-white w-6 h-6" />
             </div>
             <span className={`text-xl font-bold font-display ${scrolled ? 'text-primary' : 'text-primary'}`}>
-              Web Solutions <span className="text-secondary">Bihar</span>
+              Web Solutions
             </span>
           </Link>
 
